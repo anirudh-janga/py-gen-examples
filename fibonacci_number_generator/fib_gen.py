@@ -2,7 +2,7 @@ def fib_num_gen(gen_series_till_number):
     """ Generator to generate fibonacii numbers"""
 
     #generate only for positve integers
-    if not isinstance(gen_series_till_number, int)\
+    if not isinstance(gen_series_till_number, (int, long))\
         or gen_series_till_number < 0:
             raise TypeError("Invalid input")
 
